@@ -1,0 +1,10 @@
+---
+name: hello-world
+on:
+  workflow_dispatch:   # only when triggered manually
+jobs:
+  example:
+    steps:
+      - name: Echo Hello World
+        shell: bash
+        run:  echo "Hello World!"
