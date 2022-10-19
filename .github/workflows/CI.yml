@@ -1,7 +1,8 @@
 ---
 name: hello-world
 on:
-  workflow_dispatch:   # only when triggered manually
+  repository_dispatch: # registers event listener
+    types: [start-workflow] # type(s) of events to listen to
 jobs:
   example:
     steps:
