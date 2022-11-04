@@ -5,6 +5,7 @@ on:
     types: [start-workflow] # type(s) of events to listen to
 jobs:
   example:
+    runs-on: ubuntu-latest
     steps:
       - name: Echo Hello World
         shell: bash
